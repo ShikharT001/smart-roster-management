@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --border: #e2e8f0;
+  
+  --surface: #ffffff;
+  --surface-hover: #f1f5f9;
+  --surface-muted: #f8fafc;
+
+  --accent: #2563eb;
+  --accent-foreground: #ffffff;
+  --accent-subtle: #eff6ff;
+
+  /* Status Colors */
+  --status-working: #ecfdf5;
+  --status-working-text: #065f46;
+  --status-off: #f1f5f9;
+  --status-off-text: #475569;
+  --status-leave: #fffbeb;
+  --status-leave-text: #92400e;
+  --status-holiday: #f0f9ff;
+  --status-holiday-text: #0369a1;
+  --status-compoff: #faf5ff;
+  --status-compoff-text: #6b21a8;
+  --status-gap: #fef2f2;
+  --status-gap-text: #991b1b;
+}
+
+.dark {
+  --background: #090d16;
+  --foreground: #f1f5f9;
+  --border: #1e293b;
+
+  --surface: #0f172a;
+  --surface-hover: #1e293b;
+  --surface-muted: #0d1527;
+
+  --accent: #3b82f6;
+  --accent-foreground: #ffffff;
+  --accent-subtle: #1e3a8a;
+
+  /* Status Colors (Dark mode) */
+  --status-working: #064e3b;
+  --status-working-text: #6ee7b7;
+  --status-off: #1e293b;
+  --status-off-text: #94a3b8;
+  --status-leave: #78350f;
+  --status-leave-text: #fde68a;
+  --status-holiday: #0c4a6e;
+  --status-holiday-text: #7dd3fc;
+  --status-compoff: #581c87;
+  --status-compoff-text: #d8b4fe;
+  --status-gap: #7f1d1d;
+  --status-gap-text: #fca5a5;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tabular numbers for dense ops grids */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars for dense data grids */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
